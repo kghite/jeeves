@@ -1,0 +1,4 @@
+HTML Style Guide
+
+Color Palette:
+https://color.adobe.com/library/5a06f551-ce19-4668-9989-e5b5a8f8c8c2/theme/cf031585-8f1f-43fd-b821-69b8d8ca28db/

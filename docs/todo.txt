@@ -1,0 +1,11 @@
+Integration Tasks
+[X] Init todo list
+[] Map out system
+[] Web interface layout
+[] HTML skeleton
+[] Basic Flask integration
+[] Web app speech from Python
+[] Set up Spotify API
+[] Set up Google API
+[] Mongo setup
+[] User login and account information

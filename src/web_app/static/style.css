@@ -1,4 +1,45 @@
 body {
     background-color: #808080;
     height: 100%;
+    color: #221726;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+input {
+	border-radius: 8px;
+	width: 32%;
+	padding: 16px 16px;
+	background-color: #EBEBEB;
+	color: #191919;
+	margin: 8px 8px;
+}
+
+input[type=text]:focus {
+	outline: none;
+    border: 8px solid #221726;
+}
+
+input[type=password]:focus {
+	outline: none;
+    border: 8px solid #221726;
+}
+
+input[type=password]:focus {
+	outline: none;
+    border: 8px solid #221726;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+	border-radius: 8px;
+	width: 16%;
+    background-color: #EBEBEB;
+    border: none;
+    color: #191919;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 8px 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }

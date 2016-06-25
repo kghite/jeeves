@@ -1,11 +1,13 @@
 Integration Tasks
 [X] Init todo list
+[X] Login page html skeleton
+[X] Main page html skeleton
+[X] Flask setup
+[X] FLask login page integration
 [] Map out system
-[] Web interface layout
-[] HTML skeleton
-[] Basic Flask integration
+[] Create logo and banner graphics
+[] Mongo setup
+[] Mongo integration for login
 [] Web app speech from Python
 [] Set up Spotify API
 [] Set up Google API
-[] Mongo setup
-[] User login and account information

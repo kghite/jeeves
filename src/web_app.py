@@ -18,7 +18,7 @@ def login():
 
 @app.route('/main')
 def main():
-	return "Main Page"
+	return render_template('main.html')
 
 # start the server with the 'run()' method
 if __name__ == '__main__':

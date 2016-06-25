@@ -1,3 +1,3 @@
 # Jeeves
 
-Web App Assistant integrating Python, Flask, Mongo, HTML, Machine Learning, NLP, Google/Spotify APIs
+Web App Assistant integrating Python, Flask, Mongo, HTML, ML, NLP, Google/Spotify APIs

@@ -16,15 +16,20 @@
 <h1>Jeeves</h1>
 
 <!-- LOGIN FORM -->
+<div class="form">
   <form action="" method="post">
     <dl>
       <dd>Username
-      <dd><input type="text" name="username">
+      <dd><input type="text" name="username" value="{{ request.form.username }}">
       <dd>Password
-      <dd><input type="password" name="password">
+      <dd><input type="password" name="password" value="{{ request.form.password }}">
       <dd><input type="submit" value="Login">
     </dl>
   </form>
+  {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+  {% endif %}
+</div>
 
 </body>
 </html>

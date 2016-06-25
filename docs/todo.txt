@@ -6,8 +6,8 @@ Integration Tasks
 [X] FLask login page integration
 [] Map out system
 [] Create logo and banner graphics
-[] Mongo setup
-[] Mongo integration for login
 [] Web app speech from Python
 [] Set up Spotify API
 [] Set up Google API
+[] Mongo setup
+[] Mongo integration for login

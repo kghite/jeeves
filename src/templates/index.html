@@ -13,17 +13,19 @@
 
 <body>
 
-<h1>Jeeves</h1>
+<!-- <div id ="bar"> -->
+  <img src="static/jeeves_full_logo.png" alt="Logo" style="height: 200px">
+<!-- </div> -->
 
 <!-- LOGIN FORM -->
 <div class="form">
   <form action="" method="post">
     <dl>
-      <dd>Username
-      <dd><input type="text" name="username" value="{{ request.form.username }}">
-      <dd>Password
-      <dd><input type="password" name="password" value="{{ request.form.password }}">
-      <dd><input type="submit" value="Login">
+      Username
+      <dl><input type="text" name="username" value="{{ request.form.username }}">
+      <dl>Password
+      <dl><input type="password" name="password" value="{{ request.form.password }}">
+      <dl><input type="submit" value="Login">
     </dl>
   </form>
   {% if error %}

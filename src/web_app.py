@@ -20,13 +20,12 @@ def login():
 	
 @app.route('/main', methods=['GET', 'POST'])
 def main():
+	command = 'command will appear here'
 	if request.method == 'POST':
-		print('Post called')
 		command_input = request.form['text']
-		print(text)
-		processed_text = text.upper()
-		return render_template('main.html')
-	return render_template('main.html')
+		command = command_input.upper()
+		return render_template('main.html', command = command)
+	return render_template('main.html', command = command)
 
 # start the server with the 'run()' method
 if __name__ == '__main__':

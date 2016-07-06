@@ -10,14 +10,22 @@ app = Flask(__name__)
 def login():
     error = None
     if request.method == 'POST':
+    	print('Login post called')
         if request.form['username'] != 'admin' or request.form['password'] != 'admin':
             error = 'Invalid Credentials. Please try again.'
         else:
             return redirect(url_for('main'))
     return render_template('index.html', error=error)
 
-@app.route('/main')
+	
+@app.route('/main', methods=['GET', 'POST'])
 def main():
+	if request.method == 'POST':
+		print('Post called')
+		command_input = request.form['text']
+		print(text)
+		processed_text = text.upper()
+		return render_template('main.html')
 	return render_template('main.html')
 
 # start the server with the 'run()' method

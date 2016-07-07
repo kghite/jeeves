@@ -7,7 +7,7 @@ Integration Tasks
 [] Map out system
 [X] Create logo and banner graphics
 [X] Setup typed command passing from html to python
-[] Set up main file and import to web_app.py
+[X] Set up main file and import to web_app.py
 [] Set up data passage in Flask (audio/video/etc.)
 [] Web app speech from Python
 [] Set up Spotify API

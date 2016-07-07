@@ -1,6 +1,7 @@
 # import the Flask class from the flask module
 from flask import Flask, render_template, redirect, url_for, request
 import google_api
+import jeeves
 
 # create the application object
 app = Flask(__name__)
@@ -22,9 +23,10 @@ def login():
 def main():
 	command = 'command will appear here'
 	if request.method == 'POST':
-		command_input = request.form['text']
-		command = command_input.upper()
-		return render_template('main.html', command = command)
+		command = request.form['text']
+        command = command.upper()
+        next_action = jeeves.process_text_command(command)
+        return render_template('main.html', command = command)
 	return render_template('main.html', command = command)
 
 # start the server with the 'run()' method

@@ -21,13 +21,15 @@ def login():
 	
 @app.route('/main', methods=['GET', 'POST'])
 def main():
-	command = 'command will appear here'
-	if request.method == 'POST':
-		command = request.form['text']
-        command = command.upper()
-        next_action = jeeves.process_text_command(command)
-        return render_template('main.html', command = command)
-	return render_template('main.html', command = command)
+    response = 'Jeeves will respond here'
+    command = 'Jeeves will respond here'
+    if request.method == 'POST':
+        command = request.form['text']
+        command = command.lower()
+        response = str(jeeves.respond_to_command(command))
+        print(response)
+        return render_template('main.html', command = response)
+    return render_template('main.html', command = command)
 
 # start the server with the 'run()' method
 if __name__ == '__main__':

@@ -16,3 +16,5 @@ Integration Tasks
 [] Mongo integration for login
 [] Google calendar integration
 [] Spotify playback integration
+[X] Set up basic chatbot
+[] Spin up Heroku app

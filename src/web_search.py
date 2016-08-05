@@ -1,4 +1,11 @@
 
+import urllib
+import wikipedia
+
 def get_readable_results(search_term):
-	response = "Poodles are cute"
-	return "The web response for" + " " + search_term + " " + "is" + " " + response
+	try:
+		response = wikipedia.summary(search_term, sentences=4)
+	except wikipedia.exceptions.DisambiguationError:
+		response = "That is an ambiguous search term. Can you be more specific?" 
+
+	return response

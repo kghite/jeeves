@@ -3,7 +3,7 @@ import datetime
 
 # User input keywords and responses
 GREETING_KEYWORDS = ("hello", "hi", "greetings", "sup", "what's up", "hey")
-GREETING_RESPONSES = ["Good morning", "Good afternoon", "Good evening"]
+GREETING_RESPONSES = ["Good morning.", "Good afternoon.", "Good evening."]
 
 def check_for_greeting(sentence):
 	"""If any of the words in the user's input was a greeting, return a greeting response"""

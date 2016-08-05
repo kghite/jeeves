@@ -26,7 +26,8 @@ def main():
     if request.method == 'POST':
         command = request.form['text']
         command = command.lower()
-        response = str(jeeves.respond_to_command(command))
+        command = command.encode('ascii',errors='ignore')
+        response = jeeves.respond_to_command(command)
         print(response)
         return render_template('main.html', command = response)
     return render_template('main.html', command = command)
